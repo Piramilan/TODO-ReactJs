@@ -1,0 +1,33 @@
+.item_container {
+  width: 65%;
+  background-color: #eee;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.item_list {
+  width: 65.5%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1500px) {
+  .item_container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .item_container {
+    width: 80%;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .item_list {
+    margin: 10px 0 20px;
+  }
+}

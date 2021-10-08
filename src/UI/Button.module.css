@@ -1,0 +1,116 @@
+button {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+button,
+button span {
+  transition: 200ms;
+}
+
+button .text {
+  transform: translateX(35px);
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+button .icon {
+  position: absolute;
+  transform: translateX(110px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button svg {
+  width: 15px;
+  fill: #eee;
+}
+
+button:hover .text {
+  color: transparent;
+}
+
+button:hover .icon {
+  width: 150px;
+  border-left: none;
+  transform: translateX(0);
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Button Styles By Type */
+
+.btn_delete {
+  background: #d9042b;
+}
+
+.btn_delete:hover {
+  background: #d9042be1;
+}
+.btn_delete .icon {
+  border-left: 1px solid #6e1a0f;
+}
+
+.btn_add {
+  background: #00bd5c;
+}
+
+.btn_add:hover {
+  background: #00bd5bde;
+}
+
+.btn_add .icon {
+  border-left: 1px solid #0f6e34;
+}
+
+.btn_save {
+  background: #146cb8;
+}
+
+.btn_save:hover {
+  background: #146cb8de;
+}
+
+.btn_save .icon {
+  border-left: 1px solid #0f1d6e;
+}
+
+.btn_clear {
+  background: #c41b1b;
+}
+
+.btn_clear:hover {
+  background: #c41b1b;
+}
+
+.btn_clear .icon {
+  border-left: 1px solid #6e0f0f;
+}
+
+@media screen and (max-width: 460px) {
+  .btn_clear {
+    margin-bottom: 10px;
+  }
+}

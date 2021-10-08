@@ -1,0 +1,53 @@
+.form_style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin: 0 auto;
+}
+:focus {
+  outline: none;
+}
+input[type="text"] {
+  color: #333;
+  width: 60%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  padding: 16px 30px;
+}
+.input_effect {
+  border: 0;
+  padding: 7px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.input_effect ~ .focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3399ff;
+  transition: 0.4s;
+}
+.input_effect:focus ~ .focus-border {
+  width: 100%;
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 580px) {
+  .form_style {
+    width: 80%;
+    background-color: #ffffff;
+    flex-direction: column;
+    padding: 20px 0;
+    border-radius: 10px;
+  }
+  input[type="text"] {
+    margin-bottom: 10px;
+    width: 80%;
+  }
+  .input_effect {
+    border-bottom: none;
+  }
+}
